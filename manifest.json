@@ -89,30 +89,6 @@
         ]
       },
       "files": []
-    },
-    {
-      "id": "modification",
-      "name": "Rift modification's",
-      "sub": "Prominence II · Fabric 1.20.1",
-      "mc": "1.20.1",
-      "loader": {
-        "type": "fabric",
-        "version": "ВЕРСИЯ_FABRIC_LOADER"
-      },
-      "recommendedRam": 8,
-      "strict": [
-        "mods"
-      ],
-      "items": [
-        {
-          "name": "Prominence II",
-          "desc": "Модпак сервера Rift modification's — ставится целиком",
-          "kind": "required",
-          "icon": "mods"
-        }
-      ],
-      "optional": [],
-      "files": []
     }
   ],
   "generatedAt": "2026-11-09T18:30:20.968Z"
