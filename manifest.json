@@ -386,16 +386,23 @@
       ],
       "items2": [
         {
+          "id": "plasmo",
           "name": "Plasmo Voice",
           "desc": "Голосовой чат сервера",
           "kind": "required",
           "icon": "chat"
         },
         {
-          "name": "Sodium и Sodium Extra",
-          "desc": "Оптимизация и больше FPS",
+          "name": "Sodium",
+          "desc": "Оптимизация: больше FPS",
           "kind": "required",
           "icon": "spark"
+        },
+        {
+          "name": "Sodium Extra",
+          "desc": "Дополнительные настройки графики к Sodium",
+          "kind": "required",
+          "icon": "gear"
         }
       ],
       "optional2": [
@@ -446,28 +453,32 @@
           "name": "Voice Changer",
           "desc": "Изменение голоса для Plasmo Voice",
           "icon": "chat",
-          "default": false
+          "default": false,
+          "under": "plasmo"
         },
         {
           "id": "pv_booster",
           "name": "Volume Booster",
           "desc": "Усиление громкости для Plasmo Voice",
           "icon": "signal",
-          "default": false
+          "default": false,
+          "under": "plasmo"
         },
         {
           "id": "pv_soundphysics",
           "name": "Sound Physics для голоса",
           "desc": "Эхо и затухание голоса в пещерах и зданиях",
           "icon": "chat",
-          "default": false
+          "default": false,
+          "under": "plasmo"
         },
         {
           "id": "replay",
           "name": "ReplayMod",
           "desc": "Запись и просмотр реплеев, с голосом Plasmo Voice",
           "icon": "play",
-          "default": false
+          "default": false,
+          "under": "plasmo"
         },
         {
           "id": "webcam",
