@@ -65,6 +65,13 @@
           "desc": "Смартфон: мессенджер, банк, список игроков",
           "icon": "phone",
           "default": true
+        },
+        {
+          "id": "riftmenu",
+          "name": "Меню Rift",
+          "desc": "Своё главное меню и экран загрузки (тест)",
+          "icon": "snow",
+          "default": false
         }
       ],
       "files": [
@@ -89,6 +96,110 @@
           "sha1": "72af0ff0edcb13df89bcb2613f446c939f1db11d",
           "size": 299302,
           "title": "RIFT MENU"
+        },
+        {
+          "path": "config/fancymenu/customizablemenus.txt",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customizablemenus.txt",
+          "sha1": "e6ffb2badf3910d3152b706e0e369cc6f3a84c42",
+          "size": 76,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/background.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/background.png",
+          "sha1": "85f077517f3f7cb81e7fadf351d49d982c35b260",
+          "size": 69785,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/btn.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn.png",
+          "sha1": "27c21d17494e3f7bcdb6df7bf4349f8578cc7bc3",
+          "size": 157,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/btn_hover.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn_hover.png",
+          "sha1": "09bbb11e315a1e1c8a2fde66422eed6dd0c828c9",
+          "size": 157,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/btn_main.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn_main.png",
+          "sha1": "2c5c1813a096fe31e863a62924d7094d1f0f1964",
+          "size": 152,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/btn_main_hover.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn_main_hover.png",
+          "sha1": "23631cf9afae88f13c041bb73d5040a0a1bf2364",
+          "size": 126,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/card.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/card.png",
+          "sha1": "d51e1b5ce1a60dd85399ea0bca2a383b75e46a6c",
+          "size": 155,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/loading_background.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/loading_background.png",
+          "sha1": "55d142dfa0563717918ff644b08ec26f8bc29e12",
+          "size": 59835,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/loading_text.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/loading_text.png",
+          "sha1": "476044aa50095d6e161969acb593b8c413f0faf7",
+          "size": 833,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/logo.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/logo.png",
+          "sha1": "3f80bfba7a1bb17eda1df56eb04ace1d81fe2041",
+          "size": 14381,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/logo_mark.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/logo_mark.png",
+          "sha1": "979b7e3729fa8fdd679a4c217c9a3c92637e31b3",
+          "size": 22785,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/customization/rift_loading_screen.txt",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_loading_screen.txt",
+          "sha1": "83be77388c2a7d6194b90c1dab35550302131b84",
+          "size": 1507,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/customization/rift_title_screen.txt",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_title_screen.txt",
+          "sha1": "5c4da6c3efc304fb3e6ad261ba5d92ee093a1718",
+          "size": 9273,
+          "title": "Меню Rift",
+          "group": "riftmenu"
         }
       ],
       "variants": {
@@ -118,6 +229,30 @@
           "modrinth": "P7dR8mSH",
           "name": "Fabric API",
           "dir": "mods"
+        },
+        {
+          "modrinth": "fancymenu",
+          "name": "FancyMenu",
+          "dir": "mods",
+          "group": "riftmenu"
+        },
+        {
+          "modrinth": "drippy-loading-screen",
+          "name": "Drippy Loading Screen",
+          "dir": "mods",
+          "group": "riftmenu"
+        },
+        {
+          "modrinth": "konkrete",
+          "name": "Konkrete",
+          "dir": "mods",
+          "group": "riftmenu"
+        },
+        {
+          "modrinth": "melody",
+          "name": "Melody",
+          "dir": "mods",
+          "group": "riftmenu"
         }
       ]
     }

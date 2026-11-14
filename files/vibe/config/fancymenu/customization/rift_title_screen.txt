@@ -1,0 +1,345 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1794688868595
+  is_enabled = true
+  widget_identifier_revision = 2
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+menu_background {
+  background_type = image
+  instance_identifier = rift_bg
+  image_path = [source:local]/config/fancymenu/assets/rift/background.png
+  slide = false
+  repeat_texture = false
+  parallax = true
+  parallax_intensity_x = 0.012
+  parallax_intensity_y = 0.012
+  invert_parallax = false
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = true
+}
+
+decoration_overlay {
+  overlay_type = snowfall
+  instance_identifier = rift_snow
+  show_decoration_overlay = true
+  snow_intensity = 0.55
+  snow_scale = 1.0
+  snow_speed = 0.8
+  snow_accumulation = true
+  snow_color_hex = #FFFFFF
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_logo_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_splash_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_realms_notification_icons_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_singleplayer_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_multiplayer_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_realms_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_options_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_quit_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_language_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_accessibility_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_playdemo_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = titlescreen_mods_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = modmenu_titlescreen_mods_button
+  is_hidden = true
+}
+
+element {
+  element_type = image
+  instance_identifier = rift_card
+  anchor_point = mid-left
+  x = 12
+  y = -136
+  width = 194
+  height = 228
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  source = [source:local]/config/fancymenu/assets/rift/card.png
+  image_tint = #FFFFFF
+  nine_slice_texture = true
+  nine_slice_texture_border_x = 6
+  nine_slice_texture_border_y = 6
+}
+
+element {
+  element_type = image
+  instance_identifier = rift_logo
+  anchor_point = mid-left
+  x = 24
+  y = -122
+  width = 154
+  height = 52
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  source = [source:local]/config/fancymenu/assets/rift/logo.png
+  image_tint = #FFFFFF
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_play
+  anchor_point = mid-left
+  x = 24
+  y = -58
+  width = 170
+  height = 24
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = Играть на Rift
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn_main.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_main_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #121214
+  label_hover_color = #000000
+  label_shadow = false
+  button_element_executable_block_identifier = blk_rift_play
+  [executable_block:blk_rift_play][type:generic] = [executables:act_rift_play;]
+  [executable_action_instance:act_rift_play][action_type:joinserver] = rift.love:25565
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_single
+  anchor_point = mid-left
+  x = 24
+  y = -26
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = Одиночная игра
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_single
+  [executable_block:blk_rift_single][type:generic] = [executables:act_rift_single;]
+  [executable_action_instance:act_rift_single][action_type:opengui] = select_world_screen
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_multi
+  anchor_point = mid-left
+  x = 24
+  y = -2
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = Сетевая игра
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_multi
+  [executable_block:blk_rift_multi][type:generic] = [executables:act_rift_multi;]
+  [executable_action_instance:act_rift_multi][action_type:opengui] = join_multiplayer_screen
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_options
+  anchor_point = mid-left
+  x = 24
+  y = 22
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = Настройки
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_options
+  [executable_block:blk_rift_options][type:generic] = [executables:act_rift_options;]
+  [executable_action_instance:act_rift_options][action_type:opengui] = options_screen
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_discord
+  anchor_point = mid-left
+  x = 24
+  y = 46
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = Discord сервера
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_discord
+  [executable_block:blk_rift_discord][type:generic] = [executables:act_rift_discord;]
+  [executable_action_instance:act_rift_discord][action_type:openlink] = https://discord.gg/ftfHHTjaHN
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_quit
+  anchor_point = mid-left
+  x = 24
+  y = 70
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = Выход
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_quit
+  [executable_block:blk_rift_quit][type:generic] = [executables:act_rift_quit;]
+  [executable_action_instance:act_rift_quit][action_type:quitgame] = 
+}
+
