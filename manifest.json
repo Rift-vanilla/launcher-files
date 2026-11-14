@@ -409,16 +409,16 @@
         {
           "id": "journeymap",
           "name": "JourneyMap",
-          "desc": "Карта и миникарта. Можно вместе с Xaero",
+          "desc": "Карта и миникарта. Пока нет версии под 26.1.2 — включится, когда выйдет",
           "icon": "map",
-          "default": true
+          "default": false
         },
         {
           "id": "xaero",
           "name": "Xaero's Minimap и World Map",
           "desc": "Миникарта и карта мира Xaero. Можно вместе с JourneyMap",
           "icon": "map",
-          "default": false
+          "default": true
         },
         {
           "id": "borderless",
@@ -437,9 +437,9 @@
         {
           "id": "rprenames",
           "name": "RP Renames",
-          "desc": "Переименование предметов с текстурами из ресурспаков",
+          "desc": "Переименование предметов с текстурами из ресурспаков. Сейчас конфликтует с Mod Menu и роняет игру",
           "icon": "edit",
-          "default": true
+          "default": false
         },
         {
           "id": "emotecraft",
