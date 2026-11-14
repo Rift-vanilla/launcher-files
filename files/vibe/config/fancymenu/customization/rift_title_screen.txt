@@ -3,7 +3,7 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1794688868595
+  last_edited_time = 1794689730695
   is_enabled = true
   widget_identifier_revision = 2
   randommode = false
@@ -120,23 +120,23 @@ vanilla_button {
 
 element {
   element_type = image
-  instance_identifier = rift_card
-  anchor_point = mid-left
-  x = 12
-  y = -136
-  width = 194
-  height = 228
+  instance_identifier = rift_side
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 218
+  height = 4000
   stay_on_screen = false
   sticky_anchor = false
   auto_sizing = false
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  source = [source:local]/config/fancymenu/assets/rift/card.png
+  source = [source:local]/config/fancymenu/assets/rift/side.png
   image_tint = #FFFFFF
   nine_slice_texture = true
-  nine_slice_texture_border_x = 6
-  nine_slice_texture_border_y = 6
+  nine_slice_texture_border_x = 2
+  nine_slice_texture_border_y = 2
 }
 
 element {

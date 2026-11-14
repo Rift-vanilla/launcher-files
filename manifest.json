@@ -146,14 +146,6 @@
           "group": "riftmenu"
         },
         {
-          "path": "config/fancymenu/assets/rift/card.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/card.png",
-          "sha1": "d51e1b5ce1a60dd85399ea0bca2a383b75e46a6c",
-          "size": 155,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
           "path": "config/fancymenu/assets/rift/loading_background.png",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/loading_background.png",
           "sha1": "55d142dfa0563717918ff644b08ec26f8bc29e12",
@@ -186,9 +178,17 @@
           "group": "riftmenu"
         },
         {
+          "path": "config/fancymenu/assets/rift/side.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/side.png",
+          "sha1": "f51f618e2028c6017132bfad03ac784e010c2688",
+          "size": 84,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
           "path": "config/fancymenu/customization/rift_loading_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_loading_screen.txt",
-          "sha1": "83be77388c2a7d6194b90c1dab35550302131b84",
+          "sha1": "67d671e6b7490eb91224b84c35b16a4180ef2db7",
           "size": 1507,
           "title": "Меню Rift",
           "group": "riftmenu"
@@ -196,8 +196,8 @@
         {
           "path": "config/fancymenu/customization/rift_title_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_title_screen.txt",
-          "sha1": "5c4da6c3efc304fb3e6ad261ba5d92ee093a1718",
-          "size": 9273,
+          "sha1": "aae061b6e8e80f841bb1d52a0748544e0a022cca",
+          "size": 9270,
           "title": "Меню Rift",
           "group": "riftmenu"
         }
