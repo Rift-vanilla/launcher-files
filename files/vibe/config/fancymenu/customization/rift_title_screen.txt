@@ -3,7 +3,7 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1794693199960
+  last_edited_time = 1794693774185
   is_enabled = true
   widget_identifier_revision = 2
   randommode = false
@@ -143,7 +143,7 @@ element {
   instance_identifier = rift_logo
   anchor_point = mid-left
   x = 24
-  y = -122
+  y = -150
   width = 154
   height = 52
   stay_on_screen = false
@@ -161,7 +161,7 @@ element {
   instance_identifier = rift_play
   anchor_point = mid-left
   x = 24
-  y = -58
+  y = -86
   width = 170
   height = 24
   stay_on_screen = false
@@ -192,7 +192,7 @@ element {
   instance_identifier = rift_single
   anchor_point = mid-left
   x = 24
-  y = -26
+  y = -54
   width = 170
   height = 20
   stay_on_screen = false
@@ -223,7 +223,7 @@ element {
   instance_identifier = rift_multi
   anchor_point = mid-left
   x = 24
-  y = -2
+  y = -30
   width = 170
   height = 20
   stay_on_screen = false
@@ -254,7 +254,7 @@ element {
   instance_identifier = rift_options
   anchor_point = mid-left
   x = 24
-  y = 22
+  y = -6
   width = 170
   height = 20
   stay_on_screen = false
@@ -285,7 +285,7 @@ element {
   instance_identifier = rift_discord
   anchor_point = mid-left
   x = 24
-  y = 46
+  y = 18
   width = 170
   height = 20
   stay_on_screen = false
@@ -316,8 +316,8 @@ element {
   instance_identifier = rift_quit
   anchor_point = mid-left
   x = 24
-  y = 70
-  width = 170
+  y = 42
+  width = 146
   height = 20
   stay_on_screen = false
   sticky_anchor = false
@@ -340,5 +340,124 @@ element {
   button_element_executable_block_identifier = blk_rift_quit
   [executable_block:blk_rift_quit][type:generic] = [executables:act_rift_quit;]
   [executable_action_instance:act_rift_quit][action_type:quitgame] = 
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = 55
+  anchor_point = mid-left
+  x = 174
+  y = 42
+  width = 20
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  is_hidden = false
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_wardrobe
+  anchor_point = mid-left
+  x = 24
+  y = 74
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  element_loading_requirement_container_identifier = rc_rift_wardrobe
+  [loading_requirement_container_meta:rc_rift_wardrobe] = [groups:][instances:ri_rift_wardrobe;]
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_wardrobe] = essential
+  label = Гардероб
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_wardrobe
+  [executable_block:blk_rift_wardrobe][type:generic] = [executables:act_rift_wardrobe;]
+  [executable_action_instance:act_rift_wardrobe][action_type:opengui] = gg.essential.gui.wardrobe.Wardrobe
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_social
+  anchor_point = mid-left
+  x = 24
+  y = 98
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  element_loading_requirement_container_identifier = rc_rift_social
+  [loading_requirement_container_meta:rc_rift_social] = [groups:][instances:ri_rift_social;]
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_social] = essential
+  label = Друзья
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_social
+  [executable_block:blk_rift_social][type:generic] = [executables:act_rift_social;]
+  [executable_action_instance:act_rift_social][action_type:opengui] = gg.essential.gui.friends.SocialMenu
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_shots
+  anchor_point = mid-left
+  x = 24
+  y = 122
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  element_loading_requirement_container_identifier = rc_rift_shots
+  [loading_requirement_container_meta:rc_rift_shots] = [groups:][instances:ri_rift_shots;]
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_shots] = essential
+  label = Скриншоты
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = true
+  button_element_executable_block_identifier = blk_rift_shots
+  [executable_block:blk_rift_shots][type:generic] = [executables:act_rift_shots;]
+  [executable_action_instance:act_rift_shots][action_type:opengui] = gg.essential.gui.screenshot.components.ScreenshotBrowser
 }
 

@@ -188,7 +188,7 @@
         {
           "path": "config/fancymenu/customization/rift_loading_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_loading_screen.txt",
-          "sha1": "55cde7a1e20ac3f290cf3df92930285b5fde3bd3",
+          "sha1": "55929185c7e0c6c31884e27a51f42803d89138c6",
           "size": 1507,
           "title": "Меню Rift",
           "group": "riftmenu"
@@ -196,8 +196,8 @@
         {
           "path": "config/fancymenu/customization/rift_title_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_title_screen.txt",
-          "sha1": "cb6b688d995f6733c8c9f115e796ec9fc669efef",
-          "size": 9228,
+          "sha1": "aad5d866ddaab56eae4e48c24eb6beb3b767d841",
+          "size": 13414,
           "title": "Меню Rift",
           "group": "riftmenu"
         }
@@ -513,6 +513,42 @@
           "desc": "Друзья, косметика и скриншоты от Essential",
           "icon": "spark",
           "default": false
+        }
+      ],
+      "patches": [
+        {
+          "path": "config/fancymenu/options.txt",
+          "group": "riftmenu",
+          "set": [
+            {
+              "match": "^B:show_customization_overlay = .*$",
+              "line": "B:show_customization_overlay = 'false';"
+            }
+          ],
+          "create": "##[customization]\n\nB:show_customization_overlay = 'false';\n"
+        },
+        {
+          "path": "essential/config.toml",
+          "group": "essential",
+          "set": [
+            {
+              "match": "^\\s*essential_menu_layout\\s*=.*$",
+              "line": "essential_menu_layout = 2"
+            },
+            {
+              "match": "^\\s*quick_action_bar\\s*=.*$",
+              "line": "quick_action_bar = false"
+            }
+          ],
+          "create": "[general]\n\n\t[general.experience]\n\t\tessential_menu_layout = 2\n\t\tquick_action_bar = false\n"
+        },
+        {
+          "path": "config/replaymod.json",
+          "group": "replay",
+          "kind": "json",
+          "set": {
+            "replay.mainMenuButton": "TOP_LEFT"
+          }
         }
       ]
     }
