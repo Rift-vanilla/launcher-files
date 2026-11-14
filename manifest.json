@@ -254,6 +254,249 @@
           "dir": "mods",
           "group": "riftmenu"
         }
+      ],
+      "mods2": [
+        {
+          "modrinth": "plasmo-voice",
+          "name": "Plasmo Voice",
+          "dir": "mods"
+        },
+        {
+          "modrinth": "AANobbMI",
+          "name": "Sodium",
+          "dir": "mods"
+        },
+        {
+          "modrinth": "PtjYWJkn",
+          "name": "Sodium Extra",
+          "dir": "mods"
+        },
+        {
+          "modrinth": "mOgUt4GM",
+          "name": "Mod Menu",
+          "dir": "mods"
+        },
+        {
+          "modrinth": "q7vRRpxU",
+          "name": "Emoji Type",
+          "dir": "mods"
+        },
+        {
+          "modrinth": "LihUjdoS",
+          "name": "Plasmo Voice Voice Changer",
+          "dir": "mods",
+          "group": "pv_changer"
+        },
+        {
+          "modrinth": "3aMW3YAP",
+          "name": "Plasmo Voice Volume Booster",
+          "dir": "mods",
+          "group": "pv_booster"
+        },
+        {
+          "modrinth": "K1y8brkJ",
+          "name": "pv-addon-soundphysics",
+          "dir": "mods",
+          "group": "pv_soundphysics"
+        },
+        {
+          "modrinth": "Nv2fQJo5",
+          "name": "ReplayMod",
+          "dir": "mods",
+          "group": "replay"
+        },
+        {
+          "modrinth": "4iTfB0AP",
+          "name": "pv-addon-replaymod",
+          "dir": "mods",
+          "group": "replay"
+        },
+        {
+          "modrinth": "KLTWlg59",
+          "name": "Webcam",
+          "dir": "mods",
+          "group": "webcam"
+        },
+        {
+          "modrinth": "journeymap",
+          "name": "JourneyMap",
+          "dir": "mods",
+          "group": "journeymap"
+        },
+        {
+          "modrinth": "xaeros-minimap",
+          "name": "Xaero's Minimap",
+          "dir": "mods",
+          "group": "xaero"
+        },
+        {
+          "modrinth": "xaeros-world-map",
+          "name": "Xaero's World Map",
+          "dir": "mods",
+          "group": "xaero"
+        },
+        {
+          "modrinth": "UIexcMP1",
+          "name": "Borderless Fullscreen",
+          "dir": "mods",
+          "group": "borderless"
+        },
+        {
+          "modrinth": "Wb5oqrBJ",
+          "name": "Chat Heads",
+          "dir": "mods",
+          "group": "chatheads"
+        },
+        {
+          "modrinth": "hvqcuDMT",
+          "name": "RP Renames",
+          "dir": "mods",
+          "group": "rprenames"
+        },
+        {
+          "modrinth": "pZ2wrerK",
+          "name": "Emotecraft",
+          "dir": "mods",
+          "group": "emotecraft"
+        },
+        {
+          "modrinth": "k2ZPuTBm",
+          "name": "Essential",
+          "dir": "mods",
+          "group": "essential"
+        },
+        {
+          "modrinth": "YL57xq9U",
+          "name": "Iris Shaders",
+          "dir": "mods",
+          "group": "iris"
+        },
+        {
+          "modrinth": "bEpr0Arc",
+          "name": "Litematica",
+          "dir": "mods",
+          "group": "litematica"
+        },
+        {
+          "modrinth": "nriQwbvD",
+          "name": "Litematica Printer",
+          "dir": "mods",
+          "group": "litematica"
+        }
+      ],
+      "items2": [
+        {
+          "name": "Plasmo Voice",
+          "desc": "Голосовой чат сервера",
+          "kind": "required",
+          "icon": "chat"
+        },
+        {
+          "name": "Sodium и Sodium Extra",
+          "desc": "Оптимизация и больше FPS",
+          "kind": "required",
+          "icon": "spark"
+        }
+      ],
+      "optional2": [
+        {
+          "id": "journeymap",
+          "name": "JourneyMap",
+          "desc": "Карта и миникарта. Можно вместе с Xaero",
+          "icon": "map",
+          "default": true
+        },
+        {
+          "id": "xaero",
+          "name": "Xaero's Minimap и World Map",
+          "desc": "Миникарта и карта мира Xaero. Можно вместе с JourneyMap",
+          "icon": "map",
+          "default": false
+        },
+        {
+          "id": "borderless",
+          "name": "Borderless Fullscreen",
+          "desc": "Полный экран без рамки — быстрое переключение окон",
+          "icon": "window",
+          "default": true
+        },
+        {
+          "id": "chatheads",
+          "name": "Chat Heads",
+          "desc": "Головы игроков рядом с сообщениями в чате",
+          "icon": "user",
+          "default": true
+        },
+        {
+          "id": "rprenames",
+          "name": "RP Renames",
+          "desc": "Переименование предметов с текстурами из ресурспаков",
+          "icon": "edit",
+          "default": true
+        },
+        {
+          "id": "emotecraft",
+          "name": "Emotecraft",
+          "desc": "Эмоции и анимации персонажа",
+          "icon": "spark",
+          "default": true
+        },
+        {
+          "id": "pv_changer",
+          "name": "Voice Changer",
+          "desc": "Изменение голоса для Plasmo Voice",
+          "icon": "chat",
+          "default": false
+        },
+        {
+          "id": "pv_booster",
+          "name": "Volume Booster",
+          "desc": "Усиление громкости для Plasmo Voice",
+          "icon": "signal",
+          "default": false
+        },
+        {
+          "id": "pv_soundphysics",
+          "name": "Sound Physics для голоса",
+          "desc": "Эхо и затухание голоса в пещерах и зданиях",
+          "icon": "chat",
+          "default": false
+        },
+        {
+          "id": "replay",
+          "name": "ReplayMod",
+          "desc": "Запись и просмотр реплеев, с голосом Plasmo Voice",
+          "icon": "play",
+          "default": false
+        },
+        {
+          "id": "webcam",
+          "name": "Webcam",
+          "desc": "Видео с веб-камеры над головой игрока",
+          "icon": "user",
+          "default": false
+        },
+        {
+          "id": "iris",
+          "name": "Iris Shaders",
+          "desc": "Шейдеры",
+          "icon": "snow",
+          "default": false
+        },
+        {
+          "id": "litematica",
+          "name": "Litematica и Printer",
+          "desc": "Схемы построек и автоматическая постройка по схеме",
+          "icon": "layers",
+          "default": false
+        },
+        {
+          "id": "essential",
+          "name": "Essential",
+          "desc": "Друзья, косметика и скриншоты от Essential",
+          "icon": "spark",
+          "default": false
+        }
       ]
     }
   ],
