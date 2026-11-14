@@ -348,6 +348,12 @@
           "group": "chatheads"
         },
         {
+          "modrinth": "yacl",
+          "name": "YetAnotherConfigLib",
+          "dir": "mods",
+          "group": "rprenames"
+        },
+        {
           "modrinth": "hvqcuDMT",
           "name": "RP Renames",
           "dir": "mods",
