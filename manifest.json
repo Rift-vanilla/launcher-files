@@ -164,8 +164,8 @@
         {
           "path": "config/fancymenu/assets/rift/logo.png",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/logo.png",
-          "sha1": "f4be77cf106d5e09a2ad3fab7372c8ee1dfdf7de",
-          "size": 16696,
+          "sha1": "29d5f6ddb1bef10dd65f09181f29f05320667587",
+          "size": 28095,
           "title": "Меню Rift",
           "group": "riftmenu"
         },
@@ -180,32 +180,48 @@
         {
           "path": "config/fancymenu/assets/rift/side.png",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/side.png",
-          "sha1": "2341c8f648a8f98c108a33c842aa161a7c5fa4ba",
-          "size": 86,
+          "sha1": "7ace7d2c0772082d513d8e8cf63bf6c5eddec7ca",
+          "size": 197,
           "title": "Меню Rift",
           "group": "riftmenu"
         },
         {
           "path": "config/fancymenu/customization/rift_loading_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_loading_screen.txt",
-          "sha1": "0940d97123e5c3bce409637b4fb4ba9a298b9e08",
-          "size": 1507,
+          "sha1": "add58c8d15e4c37c06399afa5a9703e7c014dcaa",
+          "size": 1521,
           "title": "Меню Rift",
           "group": "riftmenu"
         },
         {
           "path": "config/fancymenu/customization/rift_title_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_title_screen.txt",
-          "sha1": "41d1f422fccec3d2c1fffbb5433e7461b9acaee7",
-          "size": 19424,
+          "sha1": "b003d2aa2360b06f93b5badbd31c7ca39e4b1b9e",
+          "size": 83008,
           "title": "Меню Rift",
           "group": "riftmenu"
         },
         {
-          "path": "mods/rift-ui-1.0.0.jar",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/rift-ui-1.0.0.jar",
-          "sha1": "230bf5d8b91f83c21ed4cb221caac7a8f61e7357",
-          "size": 62791,
+          "path": "config/fancymenu/assets/rift/shade_bottom.png",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/shade_bottom.png",
+          "sha1": "a72d4f669653ad81aa6e20876db90b7ec8c795a5",
+          "size": 194,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "config/fancymenu/assets/rift/silent.ogg",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/silent.ogg",
+          "sha1": "cd1e5c17890b0142bfd2eac95ea1f7caa61c7935",
+          "size": 3455,
+          "title": "Меню Rift",
+          "group": "riftmenu"
+        },
+        {
+          "path": "mods/rift-ui-1.1.0.jar",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/rift-ui-1.1.0.jar",
+          "sha1": "d40db16f0cffd58077263d7c5de5e9acce520ff9",
+          "size": 63840,
           "title": "Меню Rift",
           "group": "riftmenu"
         }
