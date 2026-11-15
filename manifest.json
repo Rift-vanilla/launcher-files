@@ -162,14 +162,6 @@
           "group": "riftmenu"
         },
         {
-          "path": "config/fancymenu/assets/rift/logo.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/logo.png",
-          "sha1": "29d5f6ddb1bef10dd65f09181f29f05320667587",
-          "size": 28095,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
           "path": "config/fancymenu/assets/rift/logo_mark.png",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/logo_mark.png",
           "sha1": "979b7e3729fa8fdd679a4c217c9a3c92637e31b3",
@@ -196,8 +188,8 @@
         {
           "path": "config/fancymenu/customization/rift_title_screen.txt",
           "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_title_screen.txt",
-          "sha1": "b003d2aa2360b06f93b5badbd31c7ca39e4b1b9e",
-          "size": 83008,
+          "sha1": "1b4ae6bc46f322710d5c4bc2aecd31516fa099de",
+          "size": 91550,
           "title": "Меню Rift",
           "group": "riftmenu"
         },
@@ -218,10 +210,10 @@
           "group": "riftmenu"
         },
         {
-          "path": "mods/rift-ui-1.1.0.jar",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/rift-ui-1.1.0.jar",
-          "sha1": "d40db16f0cffd58077263d7c5de5e9acce520ff9",
-          "size": 63840,
+          "path": "mods/rift-ui-1.2.0.jar",
+          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/rift-ui-1.2.0.jar",
+          "sha1": "29aa758b2c25ad2482502837aae5aedf0ccf0dd3",
+          "size": 108380,
           "title": "Меню Rift",
           "group": "riftmenu"
         }
@@ -412,6 +404,12 @@
           "name": "Litematica Printer",
           "dir": "mods",
           "group": "litematica"
+        },
+        {
+          "modrinth": "fancy-entity-renderer",
+          "name": "Fancy Entity Renderer",
+          "dir": "mods",
+          "group": "riftmenu"
         }
       ],
       "items2": [

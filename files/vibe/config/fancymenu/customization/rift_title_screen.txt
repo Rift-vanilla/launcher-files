@@ -33,10 +33,10 @@ decoration_overlay {
   overlay_type = snowfall
   instance_identifier = rift_snow
   show_decoration_overlay = true
-  snow_intensity = 0.55
-  snow_scale = 1.0
-  snow_speed = 0.8
-  snow_accumulation = true
+  snow_intensity = 0.4
+  snow_scale = 0.8
+  snow_speed = 0.7
+  snow_accumulation = false
   snow_color_hex = #FFFFFF
 }
 
@@ -181,21 +181,142 @@ element {
 
 element {
   element_type = image
-  instance_identifier = rift_logo
+  instance_identifier = rift_logo_mark
   anchor_point = mid-left
   x = 24
-  y = -172
-  width = 112
-  height = 50
+  y = -176
+  width = 56
+  height = 51
   stay_on_screen = false
   sticky_anchor = false
   auto_sizing = false
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  source = [source:local]/config/fancymenu/assets/rift/logo.png
+  source = [source:local]/config/fancymenu/assets/rift/logo_mark.png
   image_tint = #FFFFFF
-  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-112)/2"}}
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-140)/2"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_logo_1
+  anchor_point = mid-left
+  x = 24
+  y = -180
+  width = 54
+  height = 22
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = {"text":"","extra":[{"text":"RIFT","font":"rift:logo_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
+  transparent_background = true
+  underline_label_on_hover = false
+  navigatable = false
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = false
+  click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-140)/2+68"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_logo_2
+  anchor_point = mid-left
+  x = 24
+  y = -157
+  width = 73
+  height = 22
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = {"text":"","extra":[{"text":"VIBE+","font":"rift:logo_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
+  transparent_background = true
+  underline_label_on_hover = false
+  navigatable = false
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = false
+  click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-140)/2+68"}}
+}
+
+element {
+  element_type = shape
+  instance_identifier = rift_badge_o
+  anchor_point = mid-left
+  x = 24
+  y = -132
+  width = 46
+  height = 13
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  color = #9AD8FF5A
+  blur_enabled = false
+  corner_radius_top_left = 6
+  corner_radius_top_right = 6
+  corner_radius_bottom_right = 6
+  corner_radius_bottom_left = 6
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-140)/2+68"}}
+}
+
+element {
+  element_type = shape
+  instance_identifier = rift_badge_i
+  anchor_point = mid-left
+  x = 25
+  y = -131
+  width = 44
+  height = 11
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  color = #16303FFF
+  blur_enabled = false
+  corner_radius_top_left = 5
+  corner_radius_top_right = 5
+  corner_radius_bottom_right = 5
+  corner_radius_bottom_left = 5
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-140)/2+69"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_badge
+  anchor_point = mid-left
+  x = 24
+  y = -132
+  width = 46
+  height = 13
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  label = {"text":"","extra":[{"text":"Сезон 2","font":"rift:ui_bold_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#BFE6FF"}]}
+  transparent_background = true
+  underline_label_on_hover = false
+  navigatable = false
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = false
+  click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)-140)/2+68"}}
 }
 
 element {
@@ -310,7 +431,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons"},{"text":"  Играть на Rift","font":"rift:ui_bold"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":"  Играть на Rift","font":"rift:ui_bold_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -435,7 +556,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons"},{"text":"  Одиночная игра","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":"  Одиночная игра","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -560,7 +681,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons"},{"text":"  Сетевая игра","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":"  Сетевая игра","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -685,7 +806,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons"},{"text":"  Настройки","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":"  Настройки","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -810,7 +931,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons"},{"text":"  Discord сервера","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":"  Discord сервера","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -935,7 +1056,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons"},{"text":"  Выход","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":"  Выход","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -1072,7 +1193,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons_big"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_big_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -1214,7 +1335,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons_big"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_big_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -1356,7 +1477,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons_big"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_big_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -1498,7 +1619,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"","font":"rift:icons_big"}]}
+  label = {"text":"","extra":[{"text":"","font":"rift:icons_big_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = true
@@ -1530,14 +1651,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"Rift Vibe+ · Minecraft 26.1.2","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"Rift Vibe+ · Minecraft 26.1.2","font":"rift:ui_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #7D7B75
   label_hover_color = #7D7B75
   label_shadow = false
-  label_scale = 0.8
   click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
   advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"(((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48)"}}
 }
@@ -1650,7 +1770,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"serverplayercount","values":{"ip":"rift.love"}}","font":"rift:ui_bold"},{"text":" игроков · {"placeholder":"serverping","values":{"ip":"rift.love"}} мс","font":"rift:ui","color":"#A9A8A3"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"serverplayercount","values":{"ip":"rift.love"}}","font":"rift:ui_bold_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"},{"text":" игроков · {"placeholder":"serverping","values":{"ip":"rift.love"}} мс","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#A9A8A3"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
@@ -1680,7 +1800,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"Сервер недоступен","font":"rift:ui","color":"#A9A8A3"}]}
+  label = {"text":"","extra":[{"text":"Сервер недоступен","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#A9A8A3"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
@@ -1757,14 +1877,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":" ","font":"rift:icons","color":"#9AD8FF"},{"text":"До старта сезона","font":"rift:ui","color":"#A9A8A3"}]}
+  label = {"text":"","extra":[{"text":" ","font":"rift:icons_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#9AD8FF"},{"text":"До старта сезона","font":"rift:ui_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#A9A8A3"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.85
   click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
   [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:ri_rift_tm_a_0] = ["mode":"bigger-than","number":"1796400000000","compare_with":"{"placeholder":"unix_time"}"]
   element_loading_requirement_container_identifier = rc_rift_tm_a
@@ -1785,14 +1904,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"calc","values":{"decimal":"false","expression":"floor(((1796400000000-{"placeholder":"unix_time"})/86400000))"}} дн {"placeholder":"calc","values":{"decimal":"false","expression":"floor((((1796400000000-{"placeholder":"unix_time"})/86400000)-floor(((1796400000000-{"placeholder":"unix_time"})/86400000)))*24)"}} ч","font":"rift:ui_bold"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"calc","values":{"decimal":"false","expression":"floor(((1796400000000-{"placeholder":"unix_time"})/86400000))"}} дн {"placeholder":"calc","values":{"decimal":"false","expression":"floor((((1796400000000-{"placeholder":"unix_time"})/86400000)-floor(((1796400000000-{"placeholder":"unix_time"})/86400000)))*24)"}} ч","font":"rift:ui_bold_big_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 1.25
   click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
   [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:ri_rift_tm_b_0] = ["mode":"bigger-than","number":"1796400000000","compare_with":"{"placeholder":"unix_time"}"]
   element_loading_requirement_container_identifier = rc_rift_tm_b
@@ -1857,14 +1975,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"Новости","font":"rift:ui_bold","color":"#A9A8A3"}]}
+  label = {"text":"","extra":[{"text":"Новости","font":"rift:ui_bold_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#A9A8A3"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.85
   click_sound = [source:local]/config/fancymenu/assets/rift/silent.ogg
 }
 
@@ -1882,14 +1999,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[0].date"}}","font":"rift:ui","color":"#8D8B85"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[0].date"}}","font":"rift:ui_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#8D8B85"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.75
   button_element_executable_block_identifier = blk_rift_nw_d0
   [executable_block:blk_rift_nw_d0][type:generic] = [executables:act_rift_nw_d0;]
   [executable_action_instance:act_rift_nw_d0][action_type:openlink] = https://discord.gg/ftfHHTjaHN
@@ -1909,14 +2025,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[0].text"}}","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[0].text"}}","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.9
   description = Открыть Discord
   button_element_executable_block_identifier = blk_rift_nw_x0
   [executable_block:blk_rift_nw_x0][type:generic] = [executables:act_rift_nw_x0;]
@@ -1959,14 +2074,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[1].date"}}","font":"rift:ui","color":"#8D8B85"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[1].date"}}","font":"rift:ui_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#8D8B85"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.75
   button_element_executable_block_identifier = blk_rift_nw_d1
   [executable_block:blk_rift_nw_d1][type:generic] = [executables:act_rift_nw_d1;]
   [executable_action_instance:act_rift_nw_d1][action_type:openlink] = https://discord.gg/ftfHHTjaHN
@@ -1986,14 +2100,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[1].text"}}","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[1].text"}}","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.9
   description = Открыть Discord
   button_element_executable_block_identifier = blk_rift_nw_x1
   [executable_block:blk_rift_nw_x1][type:generic] = [executables:act_rift_nw_x1;]
@@ -2036,14 +2149,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[2].date"}}","font":"rift:ui","color":"#8D8B85"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[2].date"}}","font":"rift:ui_small_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}","color":"#8D8B85"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.75
   button_element_executable_block_identifier = blk_rift_nw_d2
   [executable_block:blk_rift_nw_d2][type:generic] = [executables:act_rift_nw_d2;]
   [executable_action_instance:act_rift_nw_d2][action_type:openlink] = https://discord.gg/ftfHHTjaHN
@@ -2063,14 +2175,13 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[2].text"}}","font":"rift:ui"}]}
+  label = {"text":"","extra":[{"text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/manifest.json","json_path":"$.news[2].text"}}","font":"rift:ui_{"placeholder":"calc","values":{"decimal":"false","expression":"({"placeholder":"guiscale"}+8-abs({"placeholder":"guiscale"}-8))/2"}}"}]}
   transparent_background = true
   underline_label_on_hover = false
   navigatable = false
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
   label_shadow = false
-  label_scale = 0.9
   description = Открыть Discord
   button_element_executable_block_identifier = blk_rift_nw_x2
   [executable_block:blk_rift_nw_x2][type:generic] = [executables:act_rift_nw_x2;]
