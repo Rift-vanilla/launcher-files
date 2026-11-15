@@ -3,7 +3,7 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1794693774185
+  last_edited_time = 1794730292012
   is_enabled = true
   widget_identifier_revision = 2
   randommode = false
@@ -136,6 +136,7 @@ element {
   image_tint = #FFFFFF
   nine_slice_texture = false
   repeat_texture = false
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)"}}
 }
 
 element {
@@ -143,9 +144,9 @@ element {
   instance_identifier = rift_logo
   anchor_point = mid-left
   x = 24
-  y = -150
-  width = 154
-  height = 52
+  y = -146
+  width = 108
+  height = 42
   stay_on_screen = false
   sticky_anchor = false
   auto_sizing = false
@@ -170,7 +171,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = Играть на Rift
+  label = {"text": "Играть на Rift", "font": "rift:ui_bold"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn_main.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_main_hover.png
   nine_slice_custom_background = true
@@ -185,6 +186,7 @@ element {
   button_element_executable_block_identifier = blk_rift_play
   [executable_block:blk_rift_play][type:generic] = [executables:act_rift_play;]
   [executable_action_instance:act_rift_play][action_type:joinserver] = rift.love:25565
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48"}}
 }
 
 element {
@@ -201,7 +203,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = Одиночная игра
+  label = {"text": "Одиночная игра", "font": "rift:ui"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -212,10 +214,11 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_single
   [executable_block:blk_rift_single][type:generic] = [executables:act_rift_single;]
   [executable_action_instance:act_rift_single][action_type:opengui] = select_world_screen
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48"}}
 }
 
 element {
@@ -232,7 +235,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = Сетевая игра
+  label = {"text": "Сетевая игра", "font": "rift:ui"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -243,10 +246,11 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_multi
   [executable_block:blk_rift_multi][type:generic] = [executables:act_rift_multi;]
   [executable_action_instance:act_rift_multi][action_type:opengui] = join_multiplayer_screen
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48"}}
 }
 
 element {
@@ -263,7 +267,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = Настройки
+  label = {"text": "Настройки", "font": "rift:ui"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -274,10 +278,11 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_options
   [executable_block:blk_rift_options][type:generic] = [executables:act_rift_options;]
   [executable_action_instance:act_rift_options][action_type:opengui] = options_screen
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48"}}
 }
 
 element {
@@ -294,7 +299,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = Discord сервера
+  label = {"text": "Discord сервера", "font": "rift:ui"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -305,10 +310,11 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_discord
   [executable_block:blk_rift_discord][type:generic] = [executables:act_rift_discord;]
   [executable_action_instance:act_rift_discord][action_type:openlink] = https://discord.gg/ftfHHTjaHN
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48"}}
 }
 
 element {
@@ -317,7 +323,7 @@ element {
   anchor_point = mid-left
   x = 24
   y = 42
-  width = 146
+  width = 170
   height = 20
   stay_on_screen = false
   sticky_anchor = false
@@ -325,7 +331,7 @@ element {
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
-  label = Выход
+  label = {"text": "Выход", "font": "rift:ui"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -336,18 +342,19 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_quit
   [executable_block:blk_rift_quit][type:generic] = [executables:act_rift_quit;]
   [executable_action_instance:act_rift_quit][action_type:quitgame] = 
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48"}}
 }
 
 vanilla_button {
   element_type = vanilla_button
   instance_identifier = 55
-  anchor_point = mid-left
-  x = 174
-  y = 42
+  anchor_point = top-left
+  x = -400
+  y = -400
   width = 20
   height = 20
   stay_on_screen = false
@@ -357,6 +364,43 @@ vanilla_button {
   fade_in_v2 = no_fading
   fade_out = no_fading
   is_hidden = false
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = rift_replay
+  anchor_point = mid-left
+  x = 24
+  y = 74
+  width = 170
+  height = 20
+  stay_on_screen = false
+  sticky_anchor = false
+  auto_sizing = false
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  element_loading_requirement_container_identifier = rc_rift_replay
+  [loading_requirement_container_meta:rc_rift_replay] = [groups:][instances:ri_rift_replay;]
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_replay] = replaymod
+  label = {"text": "", "font": "rift:icons"}
+  backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
+  nine_slice_custom_background = true
+  nine_slice_border_x = 6
+  nine_slice_border_y = 6
+  transparent_background = false
+  underline_label_on_hover = false
+  navigatable = true
+  label_base_color = #F1F0EC
+  label_hover_color = #FFFFFF
+  label_shadow = false
+  button_element_executable_block_identifier = blk_rift_replay
+  [executable_block:blk_rift_replay][type:generic] = [executables:act_rift_replay;]
+  [executable_action_instance:act_rift_replay][action_type:mimicbutton] = title_screen:55
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)"}}
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+0*(((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)+4)"}}
+  description = Повторы
 }
 
 element {
@@ -376,7 +420,7 @@ element {
   element_loading_requirement_container_identifier = rc_rift_wardrobe
   [loading_requirement_container_meta:rc_rift_wardrobe] = [groups:][instances:ri_rift_wardrobe;]
   [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_wardrobe] = essential
-  label = Гардероб
+  label = {"text": "", "font": "rift:icons"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -387,10 +431,13 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_wardrobe
   [executable_block:blk_rift_wardrobe][type:generic] = [executables:act_rift_wardrobe;]
   [executable_action_instance:act_rift_wardrobe][action_type:opengui] = gg.essential.gui.wardrobe.Wardrobe
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)"}}
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+1*(((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)+4)"}}
+  description = Гардероб
 }
 
 element {
@@ -398,7 +445,7 @@ element {
   instance_identifier = rift_social
   anchor_point = mid-left
   x = 24
-  y = 98
+  y = 74
   width = 170
   height = 20
   stay_on_screen = false
@@ -410,7 +457,7 @@ element {
   element_loading_requirement_container_identifier = rc_rift_social
   [loading_requirement_container_meta:rc_rift_social] = [groups:][instances:ri_rift_social;]
   [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_social] = essential
-  label = Друзья
+  label = {"text": "", "font": "rift:icons"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -421,10 +468,13 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_social
   [executable_block:blk_rift_social][type:generic] = [executables:act_rift_social;]
   [executable_action_instance:act_rift_social][action_type:opengui] = gg.essential.gui.friends.SocialMenu
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)"}}
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+2*(((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)+4)"}}
+  description = Друзья
 }
 
 element {
@@ -432,7 +482,7 @@ element {
   instance_identifier = rift_shots
   anchor_point = mid-left
   x = 24
-  y = 122
+  y = 74
   width = 170
   height = 20
   stay_on_screen = false
@@ -444,7 +494,7 @@ element {
   element_loading_requirement_container_identifier = rc_rift_shots
   [loading_requirement_container_meta:rc_rift_shots] = [groups:][instances:ri_rift_shots;]
   [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:ri_rift_shots] = essential
-  label = Скриншоты
+  label = {"text": "", "font": "rift:icons"}
   backgroundnormal = [source:local]/config/fancymenu/assets/rift/btn.png
   backgroundhovered = [source:local]/config/fancymenu/assets/rift/btn_hover.png
   nine_slice_custom_background = true
@@ -455,9 +505,12 @@ element {
   navigatable = true
   label_base_color = #F1F0EC
   label_hover_color = #FFFFFF
-  label_shadow = true
+  label_shadow = false
   button_element_executable_block_identifier = blk_rift_shots
   [executable_block:blk_rift_shots][type:generic] = [executables:act_rift_shots;]
   [executable_action_instance:act_rift_shots][action_type:opengui] = gg.essential.gui.screenshot.components.ScreenshotBrowser
+  advanced_width = {"placeholder":"calc","values":{"decimal":"false","expression":"((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)"}}
+  advanced_posx = {"placeholder":"calc","values":{"decimal":"false","expression":"24+3*(((((((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)+320-abs(((({"placeholder":"guiwidth"}*0.32)+200+abs(({"placeholder":"guiwidth"}*0.32)-200))/2)-320))/2)-48-12)/4)+4)"}}
+  description = Скриншоты
 }
 
