@@ -17,19 +17,14 @@
       "date": "4 декабря, 19:00 МСК",
       "text": "Старт сезона и зимний спавн",
       "icon": "snow"
-    },
-    {
-      "date": "Скоро",
-      "text": "RiftPhone — смартфон в игре",
-      "icon": "phone"
     }
   ],
   "profiles": [
     {
-      "id": "vibe",
-      "name": "Scharker Vanilla",
-      "sub": "Java 26.1.2 · ванилла+",
-      "mc": "26.1.2",
+      "id": "schalker",
+      "name": "Schalker Vanilla",
+      "sub": "Fabric 26.2 · ванилла+",
+      "mc": "26.2",
       "loader": {
         "type": "fabric",
         "version": ""
@@ -40,235 +35,19 @@
       ],
       "items": [
         {
-          "name": "RIFT MENU",
-          "desc": "Ресурспак сервера: меню и интерфейс Rift. Включается в игре сам",
-          "kind": "pack",
-          "icon": "rift"
-        },
-        {
-          "name": "Rift Territory Map",
-          "desc": "Территории сервера на карте",
-          "kind": "required",
-          "icon": "map"
-        },
-        {
           "name": "Fabric API",
-          "desc": "Нужен модам Rift; лаунчер сам берёт версию под игру",
+          "desc": "Основа для модов Fabric",
           "kind": "required",
-          "icon": "layers"
+          "icon": "plug"
         }
       ],
-      "optional": [
-        {
-          "id": "riftphone",
-          "name": "RiftPhone",
-          "desc": "Смартфон: мессенджер, банк, список игроков",
-          "icon": "phone",
-          "default": true
-        },
-        {
-          "id": "riftmenu",
-          "name": "Меню Rift",
-          "desc": "Своё главное меню и экран загрузки (тест)",
-          "icon": "snow",
-          "default": false
-        }
-      ],
-      "files": [
-        {
-          "path": "mods/RiftPhone-1.30.9.jar",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/RiftPhone-1.30.9.jar",
-          "sha1": "5c90be67773e18181abc360c0093b14a72e1a05b",
-          "size": 752775,
-          "group": "riftphone",
-          "title": "RiftPhone"
-        },
-        {
-          "path": "mods/RiftTerritoryMap-2.5.0.jar",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/RiftTerritoryMap-2.5.0.jar",
-          "sha1": "1b14008fffc5697ba62b44d41bb1db848238b41c",
-          "size": 98805,
-          "title": "Rift Territory Map"
-        },
-        {
-          "path": "resourcepacks/RIFT_Menu_Raccoon_Restored_v10.zip",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/resourcepacks/RIFT_Menu_Raccoon_Restored_v10.zip",
-          "sha1": "72af0ff0edcb13df89bcb2613f446c939f1db11d",
-          "size": 299302,
-          "title": "RIFT MENU"
-        },
-        {
-          "path": "config/fancymenu/customizablemenus.txt",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customizablemenus.txt",
-          "sha1": "e6ffb2badf3910d3152b706e0e369cc6f3a84c42",
-          "size": 76,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/background.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/background.png",
-          "sha1": "85f077517f3f7cb81e7fadf351d49d982c35b260",
-          "size": 69785,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/btn.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn.png",
-          "sha1": "27c21d17494e3f7bcdb6df7bf4349f8578cc7bc3",
-          "size": 157,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/btn_hover.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn_hover.png",
-          "sha1": "09bbb11e315a1e1c8a2fde66422eed6dd0c828c9",
-          "size": 157,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/btn_main.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn_main.png",
-          "sha1": "2c5c1813a096fe31e863a62924d7094d1f0f1964",
-          "size": 152,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/btn_main_hover.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/btn_main_hover.png",
-          "sha1": "23631cf9afae88f13c041bb73d5040a0a1bf2364",
-          "size": 126,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/loading_background.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/loading_background.png",
-          "sha1": "55d142dfa0563717918ff644b08ec26f8bc29e12",
-          "size": 59835,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/loading_text.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/loading_text.png",
-          "sha1": "476044aa50095d6e161969acb593b8c413f0faf7",
-          "size": 833,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/logo_mark.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/logo_mark.png",
-          "sha1": "979b7e3729fa8fdd679a4c217c9a3c92637e31b3",
-          "size": 22785,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/side.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/side.png",
-          "sha1": "7ace7d2c0772082d513d8e8cf63bf6c5eddec7ca",
-          "size": 197,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/customization/rift_loading_screen.txt",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_loading_screen.txt",
-          "sha1": "add58c8d15e4c37c06399afa5a9703e7c014dcaa",
-          "size": 1521,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/customization/rift_title_screen.txt",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/customization/rift_title_screen.txt",
-          "sha1": "1b4ae6bc46f322710d5c4bc2aecd31516fa099de",
-          "size": 91550,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/shade_bottom.png",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/shade_bottom.png",
-          "sha1": "a72d4f669653ad81aa6e20876db90b7ec8c795a5",
-          "size": 194,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "config/fancymenu/assets/rift/silent.ogg",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/config/fancymenu/assets/rift/silent.ogg",
-          "sha1": "cd1e5c17890b0142bfd2eac95ea1f7caa61c7935",
-          "size": 3455,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        },
-        {
-          "path": "mods/rift-ui-1.2.0.jar",
-          "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/vibe/mods/rift-ui-1.2.0.jar",
-          "sha1": "29aa758b2c25ad2482502837aae5aedf0ccf0dd3",
-          "size": 108380,
-          "title": "Меню Rift",
-          "group": "riftmenu"
-        }
-      ],
-      "variants": {
-        "26.2": [
-          {
-            "path": "mods/RiftPhone-1.30.9+mc26.2.jar",
-            "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/variants/26.2/mods/RiftPhone-1.30.9%2Bmc26.2.jar",
-            "sha1": "17bd219fa6a5cd274858d56e60f9a495d0f05275",
-            "size": 754166,
-            "group": "riftphone",
-            "title": "RiftPhone"
-          },
-          {
-            "path": "mods/RiftTerritoryMap-2.5.0+mc26.2.jar",
-            "url": "https://raw.githubusercontent.com/Rift-vanilla/launcher-files/main/files/variants/26.2/mods/RiftTerritoryMap-2.5.0%2Bmc26.2.jar",
-            "sha1": "c4a2965321a0f3e9ecfc26275ee2384ca02b1b92",
-            "size": 98463,
-            "title": "Rift Territory Map"
-          }
-        ]
-      },
-      "resourcePacks": [
-        "RIFT_Menu_Raccoon_Restored_v10.zip"
-      ],
+      "optional": [],
+      "files": [],
       "modrinthFiles": [
         {
           "modrinth": "P7dR8mSH",
           "name": "Fabric API",
           "dir": "mods"
-        },
-        {
-          "modrinth": "fancymenu",
-          "name": "FancyMenu",
-          "dir": "mods",
-          "group": "riftmenu"
-        },
-        {
-          "modrinth": "drippy-loading-screen",
-          "name": "Drippy Loading Screen",
-          "dir": "mods",
-          "group": "riftmenu"
-        },
-        {
-          "modrinth": "konkrete",
-          "name": "Konkrete",
-          "dir": "mods",
-          "group": "riftmenu"
-        },
-        {
-          "modrinth": "melody",
-          "name": "Melody",
-          "dir": "mods",
-          "group": "riftmenu"
         }
       ],
       "mods2": [
@@ -404,12 +183,6 @@
           "name": "Litematica Printer",
           "dir": "mods",
           "group": "litematica"
-        },
-        {
-          "modrinth": "fancy-entity-renderer",
-          "name": "Fancy Entity Renderer",
-          "dir": "mods",
-          "group": "riftmenu"
         }
       ],
       "items2": [
@@ -538,17 +311,6 @@
         }
       ],
       "patches": [
-        {
-          "path": "config/fancymenu/options.txt",
-          "group": "riftmenu",
-          "set": [
-            {
-              "match": "^B:show_customization_overlay = .*$",
-              "line": "B:show_customization_overlay = 'false';"
-            }
-          ],
-          "create": "##[customization]\n\nB:show_customization_overlay = 'false';\n"
-        },
         {
           "path": "essential/config.toml",
           "group": "essential",
