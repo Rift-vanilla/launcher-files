@@ -27,7 +27,7 @@
   "profiles": [
     {
       "id": "vibe",
-      "name": "Rift Vibe+",
+      "name": "Scharker Vanilla",
       "sub": "Java 26.1.2 · ванилла+",
       "mc": "26.1.2",
       "loader": {
